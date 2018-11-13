@@ -2,7 +2,7 @@ version: '3'
 
 services:
   mariadb:
-    image: mariadb:10.1.21
+    image: mariadb:latest
     volumes:
       - mariadb-local:/var/lib/mysql
     environment:
