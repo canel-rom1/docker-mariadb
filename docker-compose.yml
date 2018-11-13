@@ -4,7 +4,7 @@ services:
   mariadb:
     image: mariadb:10.1.21
     volumes:
-      - /srv/mariadb/db:/var/lib/mysql
+      - mariadb-local:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: "T7s5SXXFY9"
     ports:
@@ -16,5 +16,9 @@ services:
     image: adminer:4.2.5
     ports:
       - "8080:8080"
+
+volumes:
+  mariadb-local:
+    driver: local
 
 # vim: ft=yaml et ts=2 sw=2 sts=2
