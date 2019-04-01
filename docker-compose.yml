@@ -10,7 +10,7 @@ services:
     ports:
       - "3306:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: "T7s5SXXFY9"
+      MYSQL_ROOT_PASSWORD: "password"
 
   adminer:
     depends_on:
